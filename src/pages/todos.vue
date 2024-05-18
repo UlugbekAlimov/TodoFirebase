@@ -17,7 +17,7 @@
       </v-card-title>
 
       <div class="d-flex flex-column">
-        <v-text-field placeholder="What needs to be done?" v-model="newTodo" @keydown.enter="addTodo" variant="outlined" hide-details></v-text-field>
+        <v-text-field placeholder="Add todo" v-model="newTodo" @keydown.enter="addTodo" variant="outlined" hide-details></v-text-field>
       </div>
 
       <listblock :todos="todos" :removeTodo="removeTodo" :editTodo="editTodo" :db="db"></listblock>
